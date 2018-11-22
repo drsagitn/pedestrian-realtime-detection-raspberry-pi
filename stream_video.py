@@ -43,7 +43,7 @@ for frame in camera.capture_continuous(rawCapture, format="bgr", use_video_port=
 	image = frame.array	
 	image = detect(image)
  
-	# show the frame
+	# show the frame...
 	# cv2.imwrite("out/Frame" + str(ii) + ".jpg", image)
 	cv2.imshow("Frame", image)
 	key = cv2.waitKey(1) & 0xFF
